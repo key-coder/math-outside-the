@@ -1,0 +1,41 @@
+doctype html
+head
+    link(rel="stylesheet", href="css/vendor/jquery.fullPage.css")
+    link(rel="stylesheet", href="css/progress.css")
+
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js')
+    script(type='text/javascript', src='https://www.google.com/jsapi')
+
+    script(type='text/javascript', src='js/vendor/jquery.slimscroll.min.js')
+    script(type='text/javascript', src='js/vendor/jquery.fullPage.js')
+    script(type='text/javascript', src='js/vendor/jquery.easings.min.js')
+
+    script(type='text/javascript', src='js/progress.js')
+    script(src='js/charts.js')
+
+    script.
+        // Load the Visualization API and the piechart package.
+        google.load('visualization', '1.0', {'packages':['corechart']});
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.setOnLoadCallback(drawChart10);
+        google.setOnLoadCallback(drawChart20);
+        google.setOnLoadCallback(drawChart30);
+
+
+body
+    #fullpage
+        #section0.section
+            #time.slide(data-anchor='time')
+                .profile-head
+                img.prof-page(src='img/playtime.png')
+                #chart10.chart
+            #topic.slide(data-anchor='time')
+                .profile-head
+                img.prof-page(src='img/topics.png')
+                #chart20.chart
+            #acc.slide(data-anchor='time')
+                .profile-head
+                img.prof-page(src='img/accuracy.png')
+                #chart30.chart

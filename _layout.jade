@@ -1,0 +1,17 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Math Outside the Box')
+    link(rel="stylesheet", href="css/main.css")
+    link(rel='stylesheet', href='css/mixins.css')
+  body
+    != yield
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js')
+    script(src='js/vendor/modernizr-2.6.2.min.js')
+
+    script(src='js/plugins.js')
+    script(src='js/main.js')

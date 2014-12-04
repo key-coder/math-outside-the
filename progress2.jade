@@ -1,0 +1,41 @@
+doctype html(lang='en')
+head
+    title Progress | Math Outside The Box
+    meta(name='description', content='math outside the box progress')
+    link(rel='stylesheet', type='text/css', href='css/vendor/jquery.fullPage.css')
+    //link(rel='stylesheet', type='text/css', href='css/vendor/examples.css')
+    link(rel='stylesheet', type='text/css', href='css/progress.css')
+
+body
+   #fullpage
+       #section1.section
+           #slide1.slide(data-anchor='slide1')
+               .intro#top
+                   h1 Time Spent
+               #progress-left.graphPanes
+                   br
+                   p#report You have played for 8 hours this week!
+                   br
+                   p#report Your weekly average is 14 hours of game play!
+               #progress-right.graphPanes
+                    #chart1.chart
+           #slide2.slide(data-anchor='slide2')
+               .intro#top
+                    h1 Accuracy Rate
+               #progress-left.graphPanes
+                   #chart20.chart
+                   br
+                   #chart21.chart
+
+               #progress-right.graphPanes
+                   #chart22.chart
+                   br
+                   #chart23.chart
+
+           #slide3.slide(data-anchor='slide3')
+               .intro#top
+                    h1 Problem Types
+               #progress-left.graphPanes
+                   p Your favorite problem type is addition!
+               #progress-right.graphPanes
+
